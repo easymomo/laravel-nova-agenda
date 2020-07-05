@@ -28820,7 +28820,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         var _this = this;
 
         console.log('mounted()');
-        axios.get('/horaceho/agenda/events').then(function (response) {
+        axios.get('/easymomo/agenda/events').then(function (response) {
             _this.events = response.data;
         });
     },

@@ -38,7 +38,7 @@ export default {
     },
     mounted() {
         console.log('mounted()')
-        axios.get('/horaceho/agenda/events').then(response => {
+        axios.get('/easymomo/agenda/events').then(response => {
             this.events = response.data
         });
     },

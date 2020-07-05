@@ -1,7 +1,7 @@
 ## About Laravel Nova Agenda
 Laravel Nova Agenda is an event calendar built from Laravel Nova Tool.
 
-![Laravel Nova Agenda](https://raw.githubusercontent.com/horaceho/laravel-nova-agenda/master/resources/images/nova-ant-design-vue.png)
+![Laravel Nova Agenda](https://raw.githubusercontent.com/easymomo/laravel-nova-agenda/master/resources/images/nova-ant-design-vue.png)
 
 ## Getting Start
 Create a new Laravel application with Laravel Nova following the instructions on offical websites:
@@ -55,7 +55,7 @@ class Event extends Model
 ## Making Of
 This section is a step-by-step guide to build Laravel Nova Agenda. Once Laravel and Laravel Nova are setup up properly, follow the [Laravel Nova documentation](https://nova.laravel.com/docs/) to create a blank tool:
 ````
-php artisan nova:tool horaceho/agenda
+php artisan nova:tool easymomo/agenda
 
 Would you like to install the tool's NPM dependencies? (yes/no) [yes]:
 > yes
@@ -66,7 +66,7 @@ Would you like to update your Composer packages? (yes/no) [yes]:
 ````
 Update ````app/Providers/NovaServiceProvider````:
 ````
-use Horaceho\Agenda\Agenda;
+use Easymomo\Agenda\Agenda;
 
     public function tools()
     {
@@ -156,7 +156,7 @@ export default {
     },
     mounted() {
         console.log('mounted()')
-        axios.get('/horaceho/agenda/events').then(response => {
+        axios.get('/easymomo/agenda/events').then(response => {
             this.events = response.data
         });
     },

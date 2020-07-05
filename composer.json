@@ -1,5 +1,5 @@
 {
-    "name": "horaceho/agenda",
+    "name": "easymomo/agenda",
     "description": "A Laravel Nova tool.",
     "keywords": [
         "laravel",
@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Horaceho\\Agenda\\": "src/"
+            "Easymomo\\Agenda\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Horaceho\\Agenda\\ToolServiceProvider"
+                "Easymomo\\Agenda\\ToolServiceProvider"
             ]
         }
     },

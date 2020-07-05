@@ -1,12 +1,12 @@
 <?php
 
-namespace Horaceho\Agenda;
+namespace Easymomo\Agenda;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Horaceho\Agenda\Http\Middleware\Authorize;
+use Easymomo\Agenda\Http\Middleware\Authorize;
 
 class ToolServiceProvider extends ServiceProvider
 {
@@ -40,7 +40,7 @@ class ToolServiceProvider extends ServiceProvider
         }
 
         Route::middleware(['nova', Authorize::class])
-                ->prefix('horaceho/agenda')
+                ->prefix('easymomo/agenda')
                 ->group(__DIR__.'/../routes/api.php');
     }
 

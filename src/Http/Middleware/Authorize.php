@@ -1,8 +1,8 @@
 <?php
 
-namespace Horaceho\Agenda\Http\Middleware;
+namespace Easymomo\Agenda\Http\Middleware;
 
-use Horaceho\Agenda\Agenda;
+use Easymomo\Agenda\Agenda;
 
 class Authorize
 {

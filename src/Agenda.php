@@ -1,6 +1,6 @@
 <?php
 
-namespace Horaceho\Agenda;
+namespace Easymomo\Agenda;
 
 use Laravel\Nova\Nova;
 use Laravel\Nova\Tool;

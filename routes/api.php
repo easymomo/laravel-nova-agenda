@@ -1,6 +1,6 @@
 <?php
 
-use App\Event;
+use App\Models\AgendaEvent;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -17,6 +17,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/events', function (Request $request) {
-    $events = Event::all();
+    $events = AgendaEvent::all();
     return response()->json($events);
 });
